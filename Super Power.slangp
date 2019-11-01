@@ -1,0 +1,7 @@
+shaders = 2
+
+shader0 = crt/shaders/snes-hires-blend.slang
+filter_linear0 = false
+
+shader1 = crt/shaders/yeetron.slang
+filter_linear1 = false
