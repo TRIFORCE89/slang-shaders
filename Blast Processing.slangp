@@ -1,4 +1,4 @@
-shaders = 3
+shaders = 4
 
 shader0 = dithering/shaders/gdapt/gdapt-pass0.slang
 filter_linear0 = false
@@ -10,5 +10,13 @@ filter_linear1 = false
 scale_type1 = source
 scale1 = 1.0
 
-shader2 = crt/shaders/yeetron.slang
+shader2 = interpolation/shaders/pixellate.slang
 filter_linear2 = false
+scale_type_2 = source
+scale_type_x2 = viewport
+scale_x2 = 1.000000
+scale_type_y2 = source
+scale_y2 = 1.000000
+
+shader3 = crt/shaders/yeetron.slang
+filter_linear3 = false
