@@ -1,0 +1,16 @@
+shaders = 3
+
+shader0 = interpolation/shaders/pixellate.slang
+filter_linear0 = false
+scale_type_0 = source
+
+shader1 = blurs/blur9x9.slang
+filter_linear1 = true
+scale_type1 = source
+scale1 = 2.0
+
+shader2 = crt/shaders/crt-hyllian-3d.slang
+filter_linear2 = true
+
+parameters="CRT_MULRES_Y"
+CRT_MULRES_Y = 4.0
