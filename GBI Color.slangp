@@ -1,0 +1,13 @@
+shaders = 2
+
+shader0 = handheld/shaders/color/gbi-color.slang
+filter_linear0 = false
+scale_type0 = source
+scale0 = 1.0
+
+shader1 = interpolation/shaders/pixellate.slang
+filter_linear1 = false
+scale_type_1 = source
+
+parameters = "darken_screen"
+darken_screen = 0.50
