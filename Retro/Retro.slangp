@@ -1,10 +1,10 @@
 shaders = 2
 
-shader0 = interpolation/shaders/pixellate.slang
+shader0 = ../Slang/interpolation/shaders/pixellate.slang
 filter_linear0 = false
 scale_type_0 = source
 
-shader1 = handheld/shaders/retro-v2.slang
+shader1 = ../Slang/handheld/shaders/retro-v2.slang
 filter_linear1 = false
 
 parameters = "RETRO_PIXEL_SIZE"

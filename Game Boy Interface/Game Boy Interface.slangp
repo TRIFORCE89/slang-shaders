@@ -1,15 +1,15 @@
 shaders = 3
 
-shader0 = handheld/shaders/color/gbi-color.slang
+shader0 = ../Slang/handheld/shaders/color/gbi-color.slang
 filter_linear0 = false
 scale_type0 = source
 scale0 = 1.0
 
-shader1 = interpolation/shaders/pixellate.slang
+shader1 = ../Slang/interpolation/shaders/pixellate.slang
 filter_linear1 = false
 scale_type_1 = source
 
-shader2 = handheld/shaders/retro-v2.slang
+shader2 = ../Slang/handheld/shaders/retro-v2.slang
 filter_linear2 = false
 
 parameters = "darken_screen;RETRO_PIXEL_SIZE"
