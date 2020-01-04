@@ -2,10 +2,13 @@ shaders = 3
 
 shader0 = ../Slang/crt/shaders/snes-hires-blend.slang
 filter_linear0 = false
+scale_type0 = source
+scale0 = 1.0
 
 shader1 = ../Slang/interpolation/shaders/pixellate.slang
 filter_linear1 = false
 scale_type_1 = source
+
 scale_type_x1 = viewport
 scale_x1 = 1.000000
 scale_type_y1 = source

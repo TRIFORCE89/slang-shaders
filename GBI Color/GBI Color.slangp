@@ -9,5 +9,10 @@ shader1 = ../Slang/interpolation/shaders/pixellate.slang
 filter_linear1 = false
 scale_type_1 = source
 
+scale_type_x1 = viewport
+scale_x1 = 1.000000
+scale_type_y1 = source
+scale_y1 = 1.000000
+
 parameters = "darken_screen"
 darken_screen = 0.50
