@@ -1,18 +1,30 @@
-shaders = 2
+shaders = "3"
 
-shader0 = ../Slang/handheld/shaders/color/gbi-color.slang
-filter_linear0 = false
-scale_type0 = source
-scale0 = 1.0
+shader0 = "../Slang/handheld/shaders/color/gbi-color.slang"
+filter_linear0 = "false"
+scale_type0 = "source"
+scale0 = "1.0"
 
-shader1 = ../Slang/interpolation/shaders/pixellate.slang
-filter_linear1 = false
-scale_type_1 = source
+shader1 = "../Slang/interpolation/shaders/pixellate.slang"
+filter_linear1 = "false"
+scale_type_1 = "source"
 
-scale_type_x1 = viewport
-scale_x1 = 1.000000
-scale_type_y1 = source
-scale_y1 = 1.000000
+shader2 = "../Slang/handheld/shaders/simpletex_lcd/simpletex_lcd-4k.slang"
+filter_linear2 = "true"
+wrap_mode2 = "clamp_to_border"
+mipmap_input2 = "false"
+alias2 = ""
+float_framebuffer2 = "false"
+srgb_framebuffer2 = "false"
 
-parameters = "darken_screen"
+textures = "BACKGROUND"
+BACKGROUND = "../Slang/handheld/shaders/simpletex_lcd/png/4k/transparent.png"
+BACKGROUND_linear = false
+
+parameters = "darken_screen;GRID_INTENSITY;GRID_WIDTH;GRID_BIAS;DARKEN_GRID;DARKEN_COLOUR"
 darken_screen = 0.50
+GRID_INTENSITY = "0.65"
+GRID_WIDTH = "0.00"
+GRID_BIAS = "0.95"
+DARKEN_GRID = "0.35"
+DARKEN_COLOUR = "0.00"
