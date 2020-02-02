@@ -1,6 +1,6 @@
 shaders = 2
 
-shader0 = ../Slang/interpolation/shaders/pixellate.slang
+shader0 = ../Sources/Slang/interpolation/shaders/pixellate.slang
 filter_linear0 = false
 scale_type_0 = source
 
@@ -9,7 +9,7 @@ scale_x0 = 1.000000
 scale_type_y0 = source
 scale_y0 = 1.000000
 
-shader1 = ../Slang/crt/shaders/crt-hyllian-3d.slang
+shader1 = ../Sources/Slang/crt/shaders/crt-hyllian-3d.slang
 filter_linear1 = true
 
 parameters="CRT_MULRES_Y"

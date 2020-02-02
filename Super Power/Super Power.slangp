@@ -1,11 +1,11 @@
 shaders = 3
 
-shader0 = ../Slang/crt/shaders/snes-hires-blend.slang
+shader0 = ../Sources/Slang/crt/shaders/snes-hires-blend.slang
 filter_linear0 = false
 scale_type0 = source
 scale0 = 1.0
 
-shader1 = ../Slang/interpolation/shaders/pixellate.slang
+shader1 = ../Sources/Slang/interpolation/shaders/pixellate.slang
 filter_linear1 = false
 scale_type_1 = source
 
@@ -14,5 +14,5 @@ scale_x1 = 1.000000
 scale_type_y1 = source
 scale_y1 = 1.000000
 
-shader2 = ../Slang/crt/shaders/yeetron.slang
+shader2 = ../Sources/Slang/crt/shaders/yeetron.slang
 filter_linear2 = false

@@ -1,3 +1,3 @@
-[submodule "Slang"]
-	path = Slang
+[submodule "Sources/Slang"]
+	path = Sources/Slang
 	url = https://github.com/TRIFORCE89/Slang.git

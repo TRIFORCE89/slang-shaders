@@ -1,10 +1,10 @@
 shaders = "2"
 
-shader0 = "../Slang/interpolation/shaders/pixellate.slang"
+shader0 = "../Sources/Slang/interpolation/shaders/pixellate.slang"
 filter_linear0 = "false"
 scale_type_0 = "source"
 
-shader1 = "../Slang/handheld/shaders/simpletex_lcd/simpletex_lcd-4k.slang"
+shader1 = "../Sources/Slang/handheld/shaders/simpletex_lcd/simpletex_lcd-4k.slang"
 filter_linear1 = "true"
 wrap_mode1 = "clamp_to_border"
 mipmap_input1 = "false"
@@ -13,7 +13,7 @@ float_framebuffer1 = "false"
 srgb_framebuffer1 = "false"
 
 textures = "BACKGROUND"
-BACKGROUND = "../Slang/handheld/shaders/simpletex_lcd/png/4k/transparent.png"
+BACKGROUND = "../Sources/Slang/handheld/shaders/simpletex_lcd/png/4k/transparent.png"
 BACKGROUND_linear = false
 
 parameters = "GRID_INTENSITY;GRID_WIDTH;GRID_BIAS;DARKEN_GRID;DARKEN_COLOUR"

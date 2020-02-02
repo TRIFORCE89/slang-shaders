@@ -1,11 +1,11 @@
 shaders = 2
 
-shader0 = ../Slang/handheld/shaders/color/gbi-color.slang
+shader0 = ../Sources/Slang/handheld/shaders/color/gbi-color.slang
 filter_linear0 = false
 scale_type0 = source
 scale0 = 1.0
 
-shader1 = ../Slang/interpolation/shaders/pixellate.slang
+shader1 = ../Sources/Slang/interpolation/shaders/pixellate.slang
 filter_linear1 = false
 scale_type_1 = source
 

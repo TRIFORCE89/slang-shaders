@@ -1,16 +1,16 @@
 shaders = 4
 
-shader0 = ../Slang/dithering/shaders/gdapt/gdapt-pass0.slang
+shader0 = ../Sources/Slang/dithering/shaders/gdapt/gdapt-pass0.slang
 filter_linear0 = false
 scale_type0 = source
 scale0 = 1.0
 
-shader1 = ../Slang/dithering/shaders/gdapt/gdapt-pass1.slang
+shader1 = ../Sources/Slang/dithering/shaders/gdapt/gdapt-pass1.slang
 filter_linear1 = false
 scale_type1 = source
 scale1 = 1.0
 
-shader2 = ../Slang/interpolation/shaders/pixellate.slang
+shader2 = ../Sources/Slang/interpolation/shaders/pixellate.slang
 filter_linear2 = false
 scale_type_2 = source
 
@@ -19,5 +19,5 @@ scale_x2 = 1.000000
 scale_type_y2 = source
 scale_y2 = 1.000000
 
-shader3 = ../Slang/crt/shaders/yeetron.slang
+shader3 = ../Sources/Slang/crt/shaders/yeetron.slang
 filter_linear3 = false
