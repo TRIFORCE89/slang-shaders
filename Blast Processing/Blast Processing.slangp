@@ -21,3 +21,6 @@ scale_y2 = 1.000000
 
 shader3 = ../Sources/Slang/crt/shaders/yeetron.slang
 filter_linear3 = false
+
+parameters = "linear_gamma"
+linear_gamma = 1.0
