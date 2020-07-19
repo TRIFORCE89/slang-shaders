@@ -1,22 +1,26 @@
-shaders = 3
+shaders = 4
 
-shader0 = ../Sources/Slang/interpolation/shaders/pixellate.slang
+shader0 = ../Sources/Slang/misc/ntsc-colors.slang
 filter_linear0 = false
-scale_type_0 = source
+scale_type0 = source
+scale0 = 1.0
 
-scale_type_x0 = viewport
-scale_x0 = 1.000000
-scale_type_y0 = source
-scale_y0 = 1.000000
+shader1 = ../Sources/Slang/interpolation/shaders/pixellate.slang
+filter_linear1 = false
+scale_type_x1 = viewport
+scale_type_y1 = source
+scale1 = 1.0
 
-shader1 = ../Sources/Slang/blurs/blur9x9.slang
-filter_linear1 = true
-scale_type1 = source
-scale1 = 2.0
-srgb_framebuffer1 = true
-
-shader2 = ../Sources/Slang/crt/shaders/crt-hyllian-3d.slang
+shader2 = ../Sources/Slang/blurs/blur9x9.slang
 filter_linear2 = true
+scale_type2 = source
+scale2 = 2.0
+srgb_framebuffer2 = true
 
-parameters="CRT_MULRES_Y"
+shader3 = ../Sources/Slang/crt/shaders/crt-hyllian-3d.slang
+filter_linear3 = true
+
+parameters="CRT_MULRES_Y;intensity;INTERPOLATE_IN_LINEAR_GAMMA"
 CRT_MULRES_Y = 4.0
+intensity = 0.0
+INTERPOLATE_IN_LINEAR_GAMMA = 0.0

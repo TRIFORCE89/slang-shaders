@@ -1,29 +1,30 @@
-shaders = "3"
+shaders = 3
 
-shader0 = "../Sources/Slang/motionblur/shaders/response-time.slang"
-filter_linear0 = "false"
-scale_type0 = "source"
-scale0 = "1.0"
+shader0 = ../Sources/Slang/motionblur/shaders/response-time.slang
+filter_linear0 = false
+scale_type0 = source
+scale0 = 1.0
 
-shader1 = "../Sources/Slang/interpolation/shaders/pixellate.slang"
-filter_linear1 = "false"
-scale_type_1 = "source"
+shader1 = ../Sources/Slang/interpolation/shaders/pixellate.slang
+filter_linear1 = false
+scale_type_1 = source
+scale_1 = 1.0
 
-shader2 = "../Sources/Slang/handheld/shaders/simpletex_lcd/simpletex_lcd+gbi-color-4k.slang"
-filter_linear2 = "true"
-wrap_mode2 = "clamp_to_border"
-mipmap_input2 = "false"
-alias2 = ""
-float_framebuffer2 = "false"
-srgb_framebuffer2 = "false"
+shader2 = ../Sources/Slang/handheld/shaders/simpletex_lcd/simpletex_lcd+gbi-color-4k.slang
+filter_linear2 = true
+wrap_mode2 = clamp_to_border
+mipmap_input2 = false
+float_framebuffer2 = false
+srgb_framebuffer2 = false
 
-textures = "BACKGROUND"
-BACKGROUND = "../Sources/Slang/handheld/shaders/simpletex_lcd/png/4k/transparent.png"
+textures = BACKGROUND
+BACKGROUND = ../Sources/Slang/handheld/shaders/simpletex_lcd/png/4k/transparent.png
 BACKGROUND_linear = false
 
-parameters = "GRID_INTENSITY;GRID_WIDTH;GRID_BIAS;DARKEN_GRID;DARKEN_COLOUR"
-GRID_INTENSITY = "0.9"
-GRID_WIDTH = "0.6"
-GRID_BIAS = "0.85"
-DARKEN_GRID = "0.5"
-DARKEN_COLOUR = "0.4"
+parameters = "DARKEN_COLOUR;DARKEN_GRID;GRID_BIAS;GRID_INTENSITY;GRID_WIDTH;INTERPOLATE_IN_LINEAR_GAMMA"
+DARKEN_COLOUR = 0.4
+DARKEN_GRID = 0.5
+GRID_BIAS = 0.85
+GRID_INTENSITY = 0.9
+GRID_WIDTH = 0.6
+INTERPOLATE_IN_LINEAR_GAMMA = 0.0

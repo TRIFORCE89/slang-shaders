@@ -1,12 +1,18 @@
-shaders = 2
+shaders = 3
 
-shader0 = ../Sources/Slang/interpolation/shaders/pixellate.slang
+shader0 = ../Sources/Slang/misc/ntsc-colors.slang
 filter_linear0 = false
-scale_type_0 = source
+scale_type0 = source
+scale0 = 1.0
 
-scale_type_x0 = viewport
-scale_x0 = 1.000000
-scale_type_y0 = source
-scale_y0 = 1.000000
+shader1 = ../Sources/Slang/interpolation/shaders/pixellate.slang
+filter_linear1 = false
+scale_type_x1 = viewport
+scale_type_y1 = source
+scale1 = 1.0
 
-shader1 = ../Sources/Slang/crt/shaders/yee64.slang
+shader2 = ../Sources/Slang/crt/shaders/yee64.slang
+
+parameters="intensity;INTERPOLATE_IN_LINEAR_GAMMA"
+intensity = 0.0
+INTERPOLATE_IN_LINEAR_GAMMA = 0.0
