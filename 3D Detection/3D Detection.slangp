@@ -1,18 +1,27 @@
-shaders = 3
+shaders = 5
 
 shader0 = ../Sources/Slang/misc/ntsc-colors.slang
 filter_linear0 = false
 scale_type0 = source
 scale0 = 1.0
 
-shader1 = ../Sources/Slang/interpolation/shaders/pixellate.slang
+shader1 = ../Sources/Slang/linear/linearize.slang
 filter_linear1 = false
-scale_type_x1 = viewport
-scale_type_y1 = source
+scale_type1 = source
 scale1 = 1.0
+srgb_framebuffer1 = true
 
-shader2 = ../Sources/Slang/crt/shaders/crt-hyllian-3d.slang
+shader2 = ../Sources/Slang/interpolation/shaders/bandlimit-pixel.slang
 filter_linear2 = true
+
+shader3 = ../Sources/Slang/interpolation/shaders/pixellate.slang
+filter_linear3 = false
+scale_type_x3 = viewport
+scale_type_y3 = source
+scale3 = 1.0
+
+shader4 = ../Sources/Slang/crt/shaders/crt-hyllian-3d.slang
+filter_linear4 = true
 
 parameters="CRT_MULRES_Y;intensity;INTERPOLATE_IN_LINEAR_GAMMA"
 CRT_MULRES_Y = 1.0
