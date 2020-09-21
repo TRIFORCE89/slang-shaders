@@ -1,30 +1,35 @@
-shaders = 3
+shaders = 4
 
-shader0 = ../Sources/Slang/motionblur/shaders/response-time.slang
+shader0 = ../Sources/Slang/handheld/shaders/color/psp-color.slang
 filter_linear0 = false
 scale_type0 = source
 scale0 = 1.0
 
-shader1 = ../Sources/Slang/interpolation/shaders/pixellate.slang
+shader1 = ../Sources/Slang/motionblur/shaders/response-time.slang
 filter_linear1 = false
-scale_type_1 = source
-scale_1 = 1.0
+scale_type1 = source
+scale1 = 1.0
 
-shader2 = ../Sources/Slang/handheld/shaders/simpletex_lcd/simpletex_lcd-4k.slang
-filter_linear2 = true
-wrap_mode2 = clamp_to_border
-mipmap_input2 = false
-float_framebuffer2 = false
-srgb_framebuffer2 = false
+shader2 = ../Sources/Slang/interpolation/shaders/pixellate.slang
+filter_linear2 = false
+scale_type_2 = source
+scale_2 = 1.0
+
+shader3 = ../Sources/Slang/handheld/shaders/simpletex_lcd/simpletex_lcd-4k.slang
+filter_linear3 = true
+wrap_mode3 = clamp_to_border
+mipmap_input3 = false
+float_framebuffer3 = false
+srgb_framebuffer3 = false
 
 textures = BACKGROUND
 BACKGROUND = ../Sources/Slang/handheld/shaders/simpletex_lcd/png/4k/transparent.png
 BACKGROUND_linear = false
 
 parameters = "DARKEN_COLOUR;DARKEN_GRID;GRID_BIAS;GRID_INTENSITY;GRID_WIDTH;INTERPOLATE_IN_LINEAR_GAMMA"
-DARKEN_COLOUR = 0.05
+DARKEN_COLOUR = 0.5 #0.05
 DARKEN_GRID = 0.5
-GRID_BIAS = 0.95
-GRID_INTENSITY = 0.8
+GRID_BIAS = 0.6
+GRID_INTENSITY = 0.65
 GRID_WIDTH = 0.65
 INTERPOLATE_IN_LINEAR_GAMMA = 0.0

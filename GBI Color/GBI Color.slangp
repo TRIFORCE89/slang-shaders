@@ -1,21 +1,24 @@
-shaders = 3
+shaders = 4
 
-shader0 = ../Sources/Slang/handheld/shaders/color/gbi-color.slang
-filter_linear0 = false
-scale_type0 = source
-scale0 = 1.0
+shader0 = ../Sources/Slang/interpolation/shaders/bandlimit-pixel.slang
+filter_linear0 = true
 
-shader1 = ../Sources/Slang/misc/ntsc-colors.slang
+shader1 = ../Sources/Slang/handheld/shaders/color/gbi-color.slang
 filter_linear1 = false
 scale_type1 = source
 scale1 = 1.0
 
-shader2 = ../Sources/Slang/interpolation/shaders/pixellate.slang
+shader2 = ../Sources/Slang/misc/ntsc-colors.slang
 filter_linear2 = false
-scale_type_2 = source
-scale_2 = 1.0
+scale_type2 = source
+scale2 = 1.0
 
-parameters = "darken_screen;intensity;INTERPOLATE_IN_LINEAR_GAMMA"
-darken_screen = 0.5
+shader3 = ../Sources/Slang/interpolation/shaders/pixellate.slang
+filter_linear3 = false
+scale_type_3 = source
+scale_3 = 1.0
+
+parameters = "intensity;INTERPOLATE_IN_LINEAR_GAMMA;SMOOTHNESS"
 intensity = 0.0
 INTERPOLATE_IN_LINEAR_GAMMA = 0.0
+SMOOTHNESS = 1.0
