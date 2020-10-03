@@ -3,22 +3,32 @@ shaders = 4
 shader0 = ../Sources/Slang/interpolation/shaders/bandlimit-pixel.slang
 filter_linear0 = true
 
-shader1 = ../Sources/Slang/handheld/shaders/color/gbi-color.slang
+shader1 = ../Sources/Slang/interpolation/shaders/pixellate.slang
 filter_linear1 = false
-scale_type1 = source
-scale1 = 1.0
+scale_type_1 = source
+scale_1 = 1.0
 
-shader2 = ../Sources/Slang/misc/ntsc-colors.slang
+shader2 = ../Sources/Slang/motionblur/shaders/response-time.slang
 filter_linear2 = false
 scale_type2 = source
 scale2 = 1.0
 
-shader3 = ../Sources/Slang/interpolation/shaders/pixellate.slang
-filter_linear3 = false
-scale_type_3 = source
-scale_3 = 1.0
+shader3 = ../Sources/Slang/handheld/shaders/simpletex_lcd/simpletex_lcd+gbi-color-4k.slang
+filter_linear3 = true
+wrap_mode3 = clamp_to_border
+mipmap_input3 = false
+float_framebuffer3 = false
+srgb_framebuffer3 = false
 
-parameters = "intensity;INTERPOLATE_IN_LINEAR_GAMMA;SMOOTHNESS"
-intensity = 0.0
+textures = BACKGROUND
+BACKGROUND = ../Sources/Slang/handheld/shaders/simpletex_lcd/png/4k/transparent.png
+BACKGROUND_linear = false
+
+parameters = "DARKEN_COLOUR;DARKEN_GRID;GRID_BIAS;GRID_INTENSITY;GRID_WIDTH;INTERPOLATE_IN_LINEAR_GAMMA;SMOOTHNESS"
+DARKEN_COLOUR = 0.4 #0.05
+DARKEN_GRID = 0.5
+GRID_BIAS = 0.6
+GRID_INTENSITY = 0
+GRID_WIDTH = 0.6
 INTERPOLATE_IN_LINEAR_GAMMA = 0.0
 SMOOTHNESS = 1.0
