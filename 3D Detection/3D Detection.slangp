@@ -1,4 +1,4 @@
-shaders = 4
+shaders = 5
 
 shader0 = ../Sources/Slang/interpolation/shaders/bandlimit-pixel.slang
 filter_linear0 = true
@@ -8,14 +8,19 @@ filter_linear1 = false
 scale_type1 = source
 scale1 = 1.0
 
-shader2 = ../Sources/Slang/interpolation/shaders/pixellate.slang
-filter_linear2 = false
-scale_type_x2 = viewport
-scale_type_y2 = source
+shader2 = ../Sources/Slang/dithering/shaders/ps1dither/PS1-Undither-BoxBlur.slang
+filter_linear2 = true
+scale_type2 = source
 scale2 = 1.0
 
-shader3 = ../Sources/Slang/crt/shaders/crt-hyllian-3d.slang
-filter_linear3 = true
+shader3 = ../Sources/Slang/interpolation/shaders/pixellate.slang
+filter_linear3 = false
+scale_type_x3 = viewport
+scale_type_y3 = source
+scale3 = 1.0
+
+shader4 = ../Sources/Slang/crt/shaders/crt-hyllian-3d.slang
+filter_linear4 = true
 
 parameters="CRT_MULRES_Y;intensity;INTERPOLATE_IN_LINEAR_GAMMA;SMOOTHNESS"
 CRT_MULRES_Y = 1.0
