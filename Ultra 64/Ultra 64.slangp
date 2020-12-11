@@ -5,22 +5,18 @@ filter_linear0 = false
 scale_type0 = source
 scale0 = 1.0
 
-shader1 = ../Sources/Slang/interpolation/shaders/pixellate.slang
-filter_linear1 = false
+shader1 = ../Sources/Slang/interpolation/shaders/sharp-bilinear-simple.slang
+filter_linear1 = true
 scale_type_x1 = viewport
-scale_type_y1 = source
-scale1 = 1.0
 
 shader2 = ../Sources/Slang/blurs/blur9x9.slang
 filter_linear2 = true
 scale_type2 = source
 scale2 = 2.0
-srgb_framebuffer2 = true
 
 shader3 = ../Sources/Slang/crt/shaders/crt-hyllian-3d.slang
 filter_linear3 = true
 
-parameters="CRT_MULRES_Y;intensity;INTERPOLATE_IN_LINEAR_GAMMA"
+parameters="CRT_MULRES_Y;intensity"
 CRT_MULRES_Y = 4.0
 intensity = 0.0
-INTERPOLATE_IN_LINEAR_GAMMA = 0.0

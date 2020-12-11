@@ -1,0 +1,21 @@
+shaders = 5
+
+shader0 = ../Sources/Slang/linear/linearize.slang
+filter_linear0 = false
+scale_type0 = source
+scale0 = 1.0
+srgb_framebuffer0 = true
+
+shader1 = ../Sources/Slang/interpolation/shaders/bandlimit-pixel.slang
+filter_linear1 = true
+
+shader2 = ../Sources/Slang/interpolation/shaders/sharp-bilinear-simple.slang
+filter_linear2 = true
+scale_type_x2 = viewport
+
+shader3 = ../Sources/Slang/motionblur/shaders/response-time.slang
+filter_linear3 = false
+scale_type3 = source
+scale3 = 1.0
+
+shader4 = ../Sources/Slang/crt/shaders/yee64.slang

@@ -5,15 +5,12 @@ filter_linear0 = false
 scale_type0 = source
 scale0 = 1.0
 
-shader1 = ../Sources/Slang/interpolation/shaders/pixellate.slang
-filter_linear1 = false
+shader1 = ../Sources/Slang/interpolation/shaders/sharp-bilinear-simple.slang
+filter_linear1 = true
 scale_type_x1 = viewport
-scale_type_y1 = source
-scale1 = 1.0
 
 shader2 = ../Sources/Slang/crt/shaders/yeetron.slang
 filter_linear2 = false
 
-parameters="intensity;INTERPOLATE_IN_LINEAR_GAMMA"
+parameters = "intensity"
 intensity = 0.0
-INTERPOLATE_IN_LINEAR_GAMMA = 0.0

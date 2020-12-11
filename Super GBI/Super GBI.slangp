@@ -1,43 +1,36 @@
-shaders = 6
+shaders = 7
 
-shader0 = ../Sources/Slang/interpolation/shaders/bandlimit-pixel.slang
-filter_linear0 = true
+shader0 = ../Sources/Slang/handheld/shaders/color/gbi-color.slang
+filter_linear0 = false
+scale_type0 = source
+scale0 = 1.0
 
-shader1 = ../Sources/Slang/interpolation/shaders/pixellate.slang
+shader1 = ../Sources/Slang/crt/shaders/snes-hires-blend.slang
 filter_linear1 = false
-scale_type_1 = source
-scale_1 = 1.0
+scale_type1 = source
+scale1 = 1.0
 
-shader2 = ../Sources/Slang/handheld/shaders/simpletex_lcd/simpletex_lcd+gbi-color-4k.slang
-filter_linear2 = true
-wrap_mode2 = clamp_to_border
-mipmap_input2 = false
-float_framebuffer2 = false
-srgb_framebuffer2 = false
+shader2 = ../Sources/Slang/misc/ntsc-colors.slang
+filter_linear2 = false
+scale_type2 = source
+scale2 = 1.0
 
-textures = BACKGROUND
-BACKGROUND = ../Sources/Slang/handheld/shaders/simpletex_lcd/png/4k/transparent.png
-BACKGROUND_linear = false
-
-shader3 = ../Sources/Slang/misc/ntsc-colors.slang
+shader3 = ../Sources/Slang/linear/linearize.slang
 filter_linear3 = false
 scale_type3 = source
 scale3 = 1.0
+srgb_framebuffer3 = true
 
-shader4 = ../Sources/Slang/crt/shaders/snes-hires-blend.slang
-filter_linear4 = false
-scale_type4 = source
-scale4 = 1.0
+shader4 = ../Sources/Slang/interpolation/shaders/bandlimit-pixel.slang
+filter_linear4 = true
 
-shader5 = ../Sources/Slang/crt/shaders/yeetron.slang
-filter_linear5 = false
+shader5 = ../Sources/Slang/interpolation/shaders/sharp-bilinear-simple.slang
+filter_linear5 = true
+scale_type_x5 = viewport
 
-parameters = "DARKEN_COLOUR;DARKEN_GRID;GRID_BIAS;GRID_INTENSITY;GRID_WIDTH;intensity;INTERPOLATE_IN_LINEAR_GAMMA;SMOOTHNESS"
-DARKEN_COLOUR = 1.8 #0.05
-DARKEN_GRID = 0.5
-GRID_BIAS = 0.6
-GRID_INTENSITY = 0
-GRID_WIDTH = 0.6
+shader6 = ../Sources/Slang/crt/shaders/yeetron.slang
+filter_linear6 = false
+
+parameters = "intensity;SMOOTHNESS"
 intensity = 0.0
-INTERPOLATE_IN_LINEAR_GAMMA = 0.0
-SMOOTHNESS = 1.0
+SMOOTHNESS = 1.5

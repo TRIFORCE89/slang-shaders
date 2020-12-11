@@ -1,24 +1,21 @@
 shaders = 4
 
-shader0 = ../Sources/Slang/misc/ntsc-colors.slang
+shader0 = ../Sources/Slang/crt/shaders/snes-hires-blend.slang
 filter_linear0 = false
 scale_type0 = source
 scale0 = 1.0
 
-shader1 = ../Sources/Slang/crt/shaders/snes-hires-blend.slang
+shader1 = ../Sources/Slang/misc/ntsc-colors.slang
 filter_linear1 = false
 scale_type1 = source
 scale1 = 1.0
 
-shader2 = ../Sources/Slang/interpolation/shaders/pixellate.slang
-filter_linear2 = false
+shader2 = ../Sources/Slang/interpolation/shaders/sharp-bilinear-simple.slang
+filter_linear2 = true
 scale_type_x2 = viewport
-scale_type_y2 = source
-scale2 = 1.0
 
 shader3 = ../Sources/Slang/crt/shaders/yeetron.slang
 filter_linear3 = false
 
-parameters="intensity;INTERPOLATE_IN_LINEAR_GAMMA"
+parameters = "intensity"
 intensity = 0.0
-INTERPOLATE_IN_LINEAR_GAMMA = 0.0
