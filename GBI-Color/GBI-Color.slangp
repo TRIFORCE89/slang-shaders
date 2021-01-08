@@ -1,0 +1,32 @@
+shaders = 6
+
+shader0 = ../Sources/Slang/handheld/shaders/color/gbi-color.slang
+filter_linear0 = false
+scale_type0 = source
+scale0 = 1.0
+
+shader1 = ../Sources/Slang/crt/shaders/snes-hires-blend.slang
+filter_linear1 = false
+scale_type1 = source
+scale1 = 1.0
+
+shader2 = ../Sources/Slang/misc/ntsc-colors.slang
+filter_linear2 = false
+scale_type2 = source
+scale2 = 1.0
+
+shader3 = ../Sources/Slang/linear/linearize.slang
+filter_linear3 = false
+scale_type3 = source
+scale3 = 1.0
+srgb_framebuffer3 = true
+
+shader4 = ../Sources/Slang/interpolation/shaders/bandlimit-pixel.slang
+filter_linear4 = true
+
+shader5 = ../Sources/Slang/interpolation/shaders/sharp-bilinear-simple.slang
+filter_linear5 = true
+
+parameters = "intensity;SMOOTHNESS"
+intensity = 0.0
+SMOOTHNESS = 1.5
