@@ -1,4 +1,4 @@
-shaders = 6
+shaders = 7
 
 shader0 = ../Sources/Slang/dithering/shaders/ps1dither/PS1-Undither-BoxBlur.slang
 filter_linear0 = true
@@ -14,17 +14,22 @@ srgb_framebuffer1 = true
 shader2 = ../Sources/Slang/interpolation/shaders/bandlimit-pixel.slang
 filter_linear2 = true
 
-shader3 = ../Sources/Slang/misc/ntsc-colors.slang
+shader3 = ../Sources/Slang/handheld/shaders/color/psp-color.slang
 filter_linear3 = false
 scale_type3 = source
 scale3 = 1.0
 
-shader4 = ../Sources/Slang/interpolation/shaders/sharp-bilinear-simple.slang
-filter_linear4 = true
-scale_type_x4 = viewport
+shader4 = ../Sources/Slang/misc/ntsc-colors.slang
+filter_linear4 = false
+scale_type4 = source
+scale4 = 1.0
 
-shader5 = ../Sources/Slang/crt/shaders/crt-hyllian-3d.slang
+shader5 = ../Sources/Slang/interpolation/shaders/sharp-bilinear-simple.slang
 filter_linear5 = true
+scale_type_x5 = viewport
+
+shader6 = ../Sources/Slang/crt/shaders/crt-hyllian-3d.slang
+filter_linear6 = true
 
 parameters = "CRT_MULRES_Y;intensity;SMOOTHNESS"
 CRT_MULRES_Y = 1.0

@@ -19,6 +19,3 @@ scale_type3 = source
 scale3 = 1.0
 
 shader4 = ../Sources/Slang/crt/shaders/yee64.slang
-
-parameters = "response_time"
-response_time = 0.1665
