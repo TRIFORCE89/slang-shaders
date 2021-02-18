@@ -11,11 +11,11 @@ filter_linear1 = true
 shader2 = ../Sources/Slang/crt/shaders/crt-geom.slang
 filter_linear2 = false
 
-parameters = "CURVATURE;intensity;interlace_detect;monitorgamma;overscan_x;overscan_y;scanline_weight"
+parameters = "CURVATURE;d;intensity;interlace_detect;overscan_x;overscan_y;scanline_weight"
 CURVATURE = 0.0
+d = 3.0
 intensity = 0.0
 interlace_detect = 0.0
-monitorgamma = 2.4
 overscan_x = 0.0
 overscan_y = 0.0
 scanline_weight = 0.25

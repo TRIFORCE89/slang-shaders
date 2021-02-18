@@ -33,9 +33,10 @@ textures = BACKGROUND
 BACKGROUND = ../Sources/Slang/handheld/shaders/simpletex_lcd/png/4k/transparent.png
 BACKGROUND_linear = false
 
-parameters = "DARKEN_COLOUR;DARKEN_GRID;GRID_BIAS;GRID_INTENSITY;GRID_WIDTH;response_time;SMOOTHNESS"
+parameters = "DARKEN_COLOUR;DARKEN_GRID;display_gamma;GRID_BIAS;GRID_INTENSITY;GRID_WIDTH;response_time;SMOOTHNESS"
 DARKEN_COLOUR = 0.5 #0.05
 DARKEN_GRID = 0.5 #0.0
+display_gamma = 2.2
 GRID_BIAS = 0.6
 GRID_INTENSITY = 0.65
 GRID_WIDTH = 0.65
