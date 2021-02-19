@@ -26,7 +26,9 @@ scale_type_x4 = viewport
 shader5 = ../Sources/Slang/crt/shaders/crt-hyllian-3d.slang
 filter_linear5 = true
 
-parameters = "CRT_MULRES_Y;intensity;SMOOTHNESS"
+parameters = "CRT_MULRES_Y;intensity;PHOSPHOR;SHARPNESS;SMOOTHNESS"
 CRT_MULRES_Y = 1.0
 intensity = 0.0
+PHOSPHOR = 0.0
+SHARPNESS = 5.0
 SMOOTHNESS = 1.5

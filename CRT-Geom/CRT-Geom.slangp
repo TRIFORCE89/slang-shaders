@@ -7,15 +7,18 @@ scale0 = 1.0
 
 shader1 = ../Sources/Slang/interpolation/shaders/sharp-bilinear-simple.slang
 filter_linear1 = true
+scale_type_x1 = viewport
 
 shader2 = ../Sources/Slang/crt/shaders/crt-geom.slang
 filter_linear2 = false
 
-parameters = "CURVATURE;d;intensity;interlace_detect;overscan_x;overscan_y;scanline_weight"
+parameters = "CURVATURE;d;DOTMASK;intensity;interlace_detect;overscan_x;overscan_y;scanline_weight;SHARPER"
 CURVATURE = 0.0
 d = 3.0
+DOTMASK = 0.0
 intensity = 0.0
 interlace_detect = 0.0
 overscan_x = 0.0
 overscan_y = 0.0
 scanline_weight = 0.25
+SHARPER = 3.0
