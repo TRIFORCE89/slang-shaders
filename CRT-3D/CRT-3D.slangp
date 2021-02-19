@@ -9,7 +9,7 @@ shader1 = ../Sources/Slang/interpolation/shaders/sharp-bilinear-simple.slang
 filter_linear1 = true
 scale_type_x1 = viewport
 
-shader2 = ../Sources/Slang/crt/shaders/crt-hyllian-3d.slang
+shader2 = ../Sources/Slang/crt/shaders/hyllian/crt-hyllian-3d.slang
 filter_linear2 = true
 
 parameters = "intensity;PHOSPHOR;SHARPNESS"

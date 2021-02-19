@@ -14,7 +14,7 @@ filter_linear2 = true
 scale_type2 = source
 scale2 = 2.0
 
-shader3 = ../Sources/Slang/crt/shaders/crt-hyllian-3d.slang
+shader3 = ../Sources/Slang/crt/shaders/hyllian/crt-hyllian-3d.slang
 filter_linear3 = true
 
 parameters="CRT_MULRES_Y;intensity;PHOSPHOR;SHARPNESS"
