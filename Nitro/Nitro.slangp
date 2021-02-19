@@ -40,5 +40,5 @@ display_gamma = 2.2
 GRID_BIAS = 0.6
 GRID_INTENSITY = 0.65
 GRID_WIDTH = 0.65
-response_time = 0.1665
+response_time = 0.167 #0.1665, or half the default value (0.333)
 SMOOTHNESS = 1.5
